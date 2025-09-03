@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kyle Jacobs — Research Portfolio</title>
+  <style>
+    :root { --bg: #0b0d10; --fg: #eaeff5; --muted:#a9b3c1; --card:#12151a; --accent:#7aa2ff; }
+    html, body { margin:0; padding:0; background:var(--bg); color:var(--fg); font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 1000px; margin: 0 auto; padding: 24px; }
+    header { padding: 48px 0 12px; }
+    h1 { font-size: 34px; margin: 0 0 8px; }
+    .tagline { color: var(--muted); margin: 0 0 20px; }
+    .chips { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0 24px; }
+    .chip { background: #1b2028; border:1px solid #2a313b; color:var(--muted); padding:6px 10px; border-radius:999px; font-size: 12px; }
+    .btns { display:flex; flex-wrap:wrap; gap:12px; margin: 12px 0 32px; }
+    .btn { background: var(--accent); color:#0b0d10; border:0; padding:10px 14px; border-radius:10px; font-weight:600; display:inline-block; }
+    .grid { display:grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+    .section { margin: 28px 0; }
+    .card { grid-column: span 12; background:var(--card); border:1px solid #222833; border-radius:14px; padding:16px; }
+    @media (min-width: 720px) { .card.half { grid-column: span 6; } }
+    h2 { font-size: 22px; margin: 0 0 12px; }
+    h3 { font-size: 18px; margin: 0 0 8px; }
+    .muted { color: var(--muted); }
+    ul { margin: 8px 0 0 20px; }
+    footer { color: var(--muted); margin: 36px 0 60px; font-size: 14px; }
+    .kicker { text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); font-size: 12px; }
+    .inline { display:flex; gap:10px; flex-wrap: wrap; }
+    .pill { padding: 2px 8px; background:#1b2028; border:1px solid #2a313b; border-radius: 999px; font-size: 12px; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Kyle Jacobs</h1>
+      <p class="tagline">Biophysics M.S. candidate · Signal processing & HPC simulations · Biomedical instrumentation · Veteran</p>
+      <div class="chips">
+        <span class="chip">PSD & coherence</span>
+        <span class="chip">TouchSim</span>
+        <span class="chip">PCA/NMF</span>
+        <span class="chip">Python · NumPy · SciPy · Matplotlib</span>
+        <span class="chip">HPC · SLURM</span>
+        <span class="chip">Instrumentation & QA/QC</span>
+      
+        <span class=\"chip\">UHV · 4‑probe</span>
+        <span class=\"chip\">AFM mechanisms</span>
+        <span class=\"chip\">Diffuse reflectance spectroscopy</span>
+      </div>
+      <div class="btns">
+        <a class="btn" href="#downloads">Download: 1‑page overview (PDF)</a>
+        <a class="btn" href="mailto:kyle.jacobs@email.com">Contact</a>
+        <a class="btn" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/your-handle" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="grid">
+        <div class="card">
+          <div class="kicker">Overview</div>
+          <p>My work bridges quantitative analysis and practical engineering: large‑scale tactile neural simulations (TouchSim), spectral methods (PSD, coherence), and reproducible pipelines on HPC. Prior projects include biomedical device prototyping (vacuum systems, test instrumentation) and an applied analytics toolkit in Python. I enjoy turning technical analysis into decisions, clear visuals, and testable hypotheses.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Vibrotactile Coordinated Reset (vCR) — TouchSim Simulations</h3>
+          <p class="muted">Signal processing · HPC · Reproducibility</p>
+          <ul>
+            <li>Built reproducible pipelines to generate SA/RA/PC afferent responses; automated aggregation of multi‑GB outputs (HPC, SLURM).</li>
+            <li>Analyzed firing statistics and network‑level synchrony via Welch PSD and coherence; added PCA/NMF modules for pattern discovery.</li>
+            <li>Compared sequence/parameter variants; produced decision‑first visuals suitable for non‑specialist audiences.</li>
+          </ul>
+          <div class="inline">
+            <a class="pill" href="#downloads">Slides (PDF)</a>
+            <a class="pill" href="#downloads">Methods summary</a>
+            <a class="pill" href="https://github.com/your-handle/touchsim-tools" target="_blank" rel="noopener">Code (GitHub)</a>
+          </div>
+        </article>
+
+        <article class="card half">
+          <h3>Biomedical Device Prototyping</h3>
+          <p class="muted">Instrumentation · Vacuum systems · Test plans</p>
+          <ul>
+            <li>Assisted design/prototyping/testing of a novel instrument; assembled vacuum systems and integrated measurement gear (Keithley, lock‑in concepts).</li>
+            <li>Authored checklists and validation notes to support QA/QC and hand‑offs.</li>
+          </ul>
+          <div class="inline">
+            <a class="pill" href="#downloads">Poster (PDF)</a>
+          </div>
+        </article>
+
+        <article class="card half">
+          <h3>Signal Analytics Toolkit (Python)</h3>
+          <p class="muted">Reusable notebooks · PSD/coherence · Visualization</p>
+          <ul>
+            <li>One‑stop notebook for PSD, coherence, and cross‑correlation with templated plots and parameter sweeps.</li>
+            <li>Emphasis on clear defaults, unit‑aware axes, and exportable figures for publications.</li>
+          </ul>
+          <div class="inline">
+            <a class="pill" href="https://github.com/your-handle/psd‑coherence‑toolkit" target="_blank" rel="noopener">Code (GitHub)</a>
+          </div>
+        </article>
+
+        <article class=\"card half\">
+          <h3>Marietta College — Thin Film Transport & UHV</h3>
+          <p class=\"muted\">UHV systems · 4‑probe measurements · Materials characterization</p>
+          <ul>
+            <li>Operated and maintained ultra‑high vacuum (UHV) chamber systems; assisted with leak checking, pumpdown, and bakeout procedures.</li>
+            <li>Performed four‑probe resistance measurements on thin gold films with Dr. Kuhl; documented temperature/geometry considerations and error sources.</li>
+          </ul>
+        </article>
+
+        <article class=\"card half\">
+          <h3>Marietta College — AFM Walking Device Prototype</h3>
+          <p class=\"muted\">Mechanisms · Precision motion · Instrumentation</p>
+          <ul>
+            <li>Prototyped an in‑house AFM “walking” device with Dr. Howald to extend scan range; iterated mechanical design and control approach.</li>
+            <li>Bench-tested motion reproducibility and step stability; recorded results for design review.</li>
+          </ul>
+        </article>
+
+        <article class=\"card half\">
+          <h3>Miami University — Diffuse Reflectance Spectroscope (Clinical Prototype)</h3>
+          <p class=\"muted\">Clinical instrumentation · Bench testing · QA/QC</p>
+          <ul>
+            <li>Bench-tested a prototype diffuse reflectance spectroscope intended for clinical use; validated signal quality and calibration routines.</li>
+            <li>Drafted test procedures and acceptance notes to inform future clinical evaluation.</li>
+          </ul>
+        </article>
+
+      
+      </div>
+    </section>
+
+    <section class="section" id="downloads">
+      <h2>Downloads</h2>
+      <div class="grid">
+        <div class="card half">
+          <h3>1‑Page Overview (PDF)</h3>
+          <p class="muted">Concise summary with figures and links.</p>
+          <p><em>Upload your PDF to Drive or GitHub and paste the link here.</em></p>
+          <p><a href="#">Download Overview</a></p>
+        </div>
+        <div class="card half">
+          <h3>Slide Decks & Posters</h3>
+          <ul>
+            <li><a href="#">Thesis talk slides (PDF)</a></li>
+            <li><a href="#">TouchSim methods poster (PDF)</a></li>
+            <li><a href="#">Device prototyping poster (PDF)</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Contact</h2>
+      <div class="grid">
+        <div class="card">
+          <p>Email: <a href="mailto:kyle.jacobs@email.com">kyle.jacobs@email.com</a>
+          · LinkedIn: <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">linkedin.com/in/your‑handle</a>
+          · GitHub: <a href="https://github.com/your-handle" target="_blank" rel="noopener">github.com/your‑handle</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Last updated: September 2, 2025 · © Kyle Jacobs</p>
+    </footer>
+  </div>
+</body>
+</html>
+
