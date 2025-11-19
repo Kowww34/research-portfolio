@@ -228,18 +228,17 @@
   <div class="wrap">
     <header>
       <h1>Kyle Jacobs</h1>
-      <p class="tagline">Ohio University Physics Ph.D. Candidate · Computational Biophysics · Biomedical Instrumentation</p>
+      <p class="tagline">Physics Ph.D. Candidate at Ohio University · Computational Biophysics · Biomedical Instrumentation</p>
       <div class="chips">
-        <span class="chip">PSD & coherence</span>
-        <span class="chip">TouchSim</span>
-        <span class="chip">PCA/NMF</span>
-        <span class="chip">Python · NumPy · SciPy · Matplotlib</span>
-        <span class="chip">HPC · SLURM</span>
-        <span class="chip">Instrumentation</span>
+        <span class="chip">Computational Modeling</span>
+        <span class="chip">Signal Processing</span>
+        <span class="chip">Data Analysis & Visualization</span>
+        <span class="chip">Scientific Programming</span>
+        <span class="chip">High-Performance Computing</span>
+        <span class="chip">Instrumentation & Prototyping</span>
       </div>
       <div class="btns">
-        <a class="btn" href="#downloads">Download: 1-page overview (PDF)</a>
-        <a class="btn" href="mailto:kj860023@ohio.edu">Email</a>
+        <a class="btn" href="mailto:kj860023@ohio.edu">Email Me</a>
       </div>
     </header>
 
@@ -247,13 +246,15 @@
       <div class="grid">
         <div class="card">
           <div class="kicker">Overview</div>
-          <p>
-            My work bridges quantitative analysis and practical engineering:
-            large-scale tactile neural simulations (TouchSim), spectral methods (PSD, coherence),
-            and reproducible pipelines on HPC. Prior projects include biomedical device prototyping
-            (vacuum systems, test instrumentation) and an applied analytics toolkit in Python.
-            I enjoy turning technical analysis into decisions, clear visuals, and testable hypotheses.
-          </p>
+            <p>
+              I’m happiest at the intersection of science and engineering, where ideas have to hold up 
+              both in a model and on a workbench. My personal and professional interests span physics, biology, and neuroscience, 
+              with a particular focus on how quantitative models and real-world experiments inform one another. 
+              I enjoy building and testing models, coding large simulations, and developing practical tools that make 
+              complex systems easier to understand. Equally, I love prototyping and have a strong knack for working with my hands, designing experiments,
+              and troubleshooting. My recent work centers on modeling neuronal dynamics and information processing, 
+              combining computational analysis with a curiosity-driven approach to understanding biological systems.
+            </p>
         </div>
       </div>
     </section>
@@ -262,52 +263,48 @@
     <section class="section">
       <h2>Research & Projects</h2>
 
-      <!-- CURRENT WORK (expanded by default) -->
-      <details class="accordion" open id="current-work">
-        <summary>
-          <span class="accordion-label">Current Work</span>
-          <span class="accordion-chevron">▶</span>
-        </summary>
-        <div class="accordion-body">
-          <div class="grid">
-            <article class="card">
-              <h3>Vibrotactile Coordinated Reset (vCR) — TouchSim Simulations</h3>
-              <p class="muted">Signal processing · HPC · Reproducibility</p>
-              <ul>
-                <li>Built reproducible pipelines to generate SA/RA/PC afferent responses; automated aggregation of multi-GB outputs (HPC, SLURM).</li>
-                <li>Analyzed firing statistics and network-level synchrony via Welch PSD and coherence; added PCA/NMF modules for pattern discovery.</li>
-                <li>Compared sequence/parameter variants; produced decision-first visuals suitable for non-specialist audiences.</li>
-              </ul>
-              <div class="inline">
-                <a class="pill" href="#downloads">Slides (PDF)</a>
-                <a class="pill" href="#downloads">Methods summary</a>
-                <a class="pill" href="https://github.com/your-handle/touchsim-tools" target="_blank" rel="noopener">Code (GitHub)</a>
-              </div>
-            </article>
+     <!-- CURRENT WORK (expanded by default) -->
+<details class="accordion" open id="current-work">
+  <summary>
+    <span class="accordion-label">Current Work</span>
+    <span class="accordion-chevron">▶</span>
+  </summary>
+  <div class="accordion-body">
+    <div class="grid">
 
-            <article class="card half">
-              <h3>Signal Analytics Toolkit (Python)</h3>
-              <p class="muted">Reusable notebooks · PSD/coherence · Visualization</p>
-              <ul>
-                <li>One-stop notebook for PSD, coherence, and cross-correlation with templated plots and parameter sweeps.</li>
-                <li>Emphasis on clear defaults, unit-aware axes, and exportable figures for publications.</li>
-              </ul>
-              <div class="inline">
-                <a class="pill" href="https://github.com/your-handle/psd-coherence-toolkit" target="_blank" rel="noopener">Code (GitHub)</a>
-              </div>
-            </article>
-
-            <article class="card half">
-              <h3>Biomedical Device Prototyping (Ongoing Interfaces)</h3>
-              <p class="muted">Instrumentation · Experimental design · Analysis</p>
-              <ul>
-                <li>Bridging simulated afferent responses to potential hardware implementations and sensor designs.</li>
-                <li>Developing analysis scripts to standardize signal characterization, QA/QC checks, and experiment logging.</li>
-              </ul>
-            </article>
-          </div>
+      <!-- Pill 1: Master's Thesis -->
+      <article class="card">
+        <h3>Master’s Thesis — Vibrotactile Coordinated Reset (vCR) Modeling</h3>
+        <p class="muted">Neural simulations · Signal processing · HPC</p>
+        <ul>
+          <li>Developed large-scale TouchSim-based pipelines to simulate SA/RA/PC afferent responses under vCR stimulation protocols.</li>
+          <li>Analyzed firing statistics, phase-locking behavior, and synchrony patterns using PSD, coherence, and dimensionality-reduction methods.</li>
+          <li>Automated data aggregation and visualization workflows suitable for publication, presentations, and replication.</li>
+        </ul>
+        <div class="inline">
+          <a class="pill" href="#downloads">Thesis (PDF)</a>
+          <a class="pill" href="#downloads">Talk Slides</a>
         </div>
-      </details>
+      </article>
+
+      <!-- Pill 2: TouchSim → Thalamus Modeling -->
+      <article class="card">
+        <h3>Current Project — Peripheral-to-Thalamic Neural Modeling Framework</h3>
+        <p class="muted">Computational neuroscience · Network dynamics · Systems modeling</p>
+        <ul>
+          <li>Extending TouchSim outputs into a multi-stage neural processing pipeline incorporating thalamic relay neurons.</li>
+          <li>Modeling synaptic integration, temporal filtering, and population-level coding as afferent signals ascend toward cortex.</li>
+          <li>Building modular analysis tools to explore information transfer, spike timing relationships, and emergent network behavior.</li>
+        </ul>
+        <div class="inline">
+          <a class="pill" href="#downloads">Project Notes</a>
+          <a class="pill" href="#downloads">Preliminary Figures</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</details>
 
       <!-- PREVIOUS PROJECTS (collapsed by default) -->
       <details class="accordion" id="previous-projects">
@@ -391,24 +388,33 @@
     </section>
 
     <section class="section" id="downloads">
-      <h2>Downloads</h2>
+      <h2>Publications and Related Talks</h2>
       <div class="grid">
         <div class="card half">
-          <h3>1-Page Overview (PDF)</h3>
-          <p class="muted">Concise summary with figures and links.</p>
-          <p><em>Upload your PDF to Drive or GitHub and paste the link here.</em></p>
-          <p><a href="#">Download Overview</a></p>
-        </div>
-        <div class="card half">
-          <h3>Slide Decks & Posters</h3>
+          <h3>Publications</h3>
+          <p class="muted">Papers, preprints, and manuscripts.</p>
           <ul>
-            <li><a href="#">Thesis talk slides (PDF)</a></li>
-            <li><a href="#">TouchSim methods poster (PDF)</a></li>
-            <li><a href="#">Device prototyping poster (PDF)</a></li>
+            <!-- Example entries; replace # with real links as they exist -->
+            <!-- <li><a href="#" target="_blank" rel="noopener">Jacobs, K. et al., "Title of vCR Paper", Journal, Year</a></li> -->
+            <!-- <li><a href="#" target="_blank" rel="noopener">Jacobs, K., "Title of Preprint", arXiv:XXXX.XXXXX, Year</a></li> -->
+            <li><em>No publications available yet — coming soon.</em></li>
+          </ul>
+        </div>
+    
+        <div class="card half">
+          <h3>Talks & Slide Decks</h3>
+          <p class="muted">Seminars, thesis defenses, and research presentations.</p>
+          <ul>
+            <!-- Replace # with actual slide links as you upload them -->
+            <!-- <li><a href="#" target="_blank" rel="noopener">Master’s Thesis Defense — vCR Modeling (Slides, PDF)</a></li> -->
+            <!-- <li><a href="#" target="_blank" rel="noopener">TouchSim Methods & Afferent Modeling (Slides, PDF)</a></li> -->
+            <!-- <li><a href="#" target="_blank" rel="noopener">Peripheral-to-Thalamic Modeling Framework (Slides, PDF)</a></li> -->
+            <li><em>Slides will be posted here as they become available.</em></li>
           </ul>
         </div>
       </div>
     </section>
+
 
     <section class="section">
       <h2>Contact</h2>
