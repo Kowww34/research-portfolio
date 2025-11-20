@@ -214,6 +214,17 @@
       display: block;
     }
     
+    /* add a little space between the image and the video */
+    .project-media video {
+      margin-top: 8px;
+    }
+    
+    .project-media figcaption {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    
     .project-media figcaption {
       font-size: 13px;
       color: var(--muted);
@@ -342,7 +353,7 @@
             <article class="card project-card" id="project-afm">
               <figure class="project-media">
                 <!-- New image above the video -->
-                <img src="walkerMount.png" alt="AFM coarse-approach piezo motor still frame">
+                <img src="walkerMount.png" alt="">
             
                 <video controls>
                   <source src="afm-walking.mp4" type="video/mp4">
