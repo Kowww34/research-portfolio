@@ -205,7 +205,21 @@
       grid-template-columns: 1fr;
       gap: 12px;
     }
-
+    
+    .vs-gallery .thumb-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    
+    .vs-gallery .thumb-row img {
+      width: 200px;
+      height: 200px;
+      max-width: none;     /* override any global img width:100% */
+      border-radius: 10px;
+      object-fit: cover;   /* crop instead of squish */
+      display: block;
+    }
     .project-media img,
     .project-media video {
       width: 100%;
@@ -321,18 +335,19 @@
           parameter regimes.
         </p>
       
-        <figure class="project-media">
-          <img src="firstFinger_3DvectorStrength.png"
-               alt="3D visualization of vector strength across first-finger afferent responses under vCR stimulation">
-          <img src="hand_response.png"
-               alt="Hand-wide TouchSim response map showing spatial patterns of afferent activation">
+        <figure class="project-media vs-gallery">
+          <div class="thumb-row">
+            <img src="firstfinger_3Dvectorstrength.png"
+                 alt="3D visualization of vector strength across first-finger afferent responses under vCR stimulation">
+            <img src="hand_resppnse.png"
+                 alt="Hand-wide TouchSim response map showing spatial patterns of afferent activation">
+          </div>
           <figcaption>
-            Example outputs from the vCR modeling pipeline: vector strength structure in a single digit 
+            Example outputs from the vCR modeling pipeline: vector strength organization in a single digit 
             and spatial response patterns across the hand.
           </figcaption>
         </figure>
       </article>
-
     </div>
   </div>
 </details>
